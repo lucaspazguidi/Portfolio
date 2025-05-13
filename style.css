@@ -1,0 +1,365 @@
+body {
+    background-color: #010536; /* Fundo claro */
+    color: #b1b1b1; /* Texto principal em cinza escuro */
+    font-family: 'Arial', sans-serif; /* Font-family clean */
+    margin: 0;
+    padding: 0;
+}
+body p{
+    color: white;
+    font-size: 1.2rem;
+}
+h1, h2, h3 {
+    color: #e0e1e2; /* Títulos em azul claro */
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 40px;
+}
+/* Header */
+header {
+    background: linear-gradient(to right, #011a65, #1d3572, #264aa5,#4a73b8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #3294cc; /* Laranja */
+    transition: 0.3s ease;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Skills Section */
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #011a65, #1d3572, #264aa5,#4a73b8);
+    filter: brightness(1.2); /* Aumenta o brilho no final do gradiente */
+    border-radius: 25px;
+}
+.skill-pair{
+    display: flex;
+}
+
+.skill-item {
+    text-align: center;
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    color: #d4d4d4;
+}
+
+#titulo-projeto{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+/* Projects Section */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Modificar o tamanho dos projetos */
+.project-item {
+    flex: 1 1 45%; /* Isso faz com que cada projeto ocupe até 45% da largura da tela */
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Adicionando o efeito de hover */
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+}
+
+.project-item h3 {
+    color: #4e9fd1;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.project-item p {
+    padding: 0 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.project-item a {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    background-color: #0f576d;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.project-pair {
+    display: flex; /* Usar flexbox para alinhar os projetos lado a lado */
+    justify-content: space-between; /* Distribuir espaço entre os projetos */
+    margin-bottom: 20px; /* Espaço entre as fileiras de projetos */
+}
+
+.project-item a:hover {
+    background-color: #051a42;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .project-item {
+        flex: 1 1 45%; /* 2 por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item {
+        flex: 1 1 100%; /* Cada projeto ocupa toda a largura em telas muito pequenas */
+    }
+}
+
+/* Resume Section */
+#resume {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#resume img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#resume a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #4e9fd1;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#resume a:hover {
+    background-color: #3a7da2;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.whatsapp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+/* Follow Section */
+#follow {
+    text-align: center;
+}
+
+.social-icons {
+    display: inline-flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #011a65, #1d3572, #264aa5,#4a73b8);
+    filter: brightness(1.2); /* Aumenta o brilho no final do gradiente */
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+#send{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+#send-buttons{
+    padding-bottom: 50px;
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+form input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #4e9fd1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3a7da2;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .skill-item,
+    .project-item {
+        flex: 1 1 45%; /* 2 por linha em telas menores */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    form input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .skill-item img,
+    .project-item img,
+    .whatsapp-img,
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
