@@ -4,6 +4,10 @@ body {
     font-family: 'Arial', sans-serif; /* Font-family clean */
     margin: 0;
     padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
 }
 body p{
     color: white;
@@ -32,6 +36,7 @@ header h1 {
 header p {
     font-size: 1.2rem;
     margin: 5px 0;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -45,11 +50,11 @@ nav ul {
     justify-content: center;
     gap: 20px;
 }
-
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin: 0px 20px;
 }
 
 nav a:hover {
@@ -65,22 +70,27 @@ main {
 /* About Section */
 #about {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 #about img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: auto;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-right: 50px;    
 }
 
 #about p {
     font-size: 1.2rem;
-    max-width: 800px;
-    text-align: center;
+    max-width: 400px;
+    text-align: justify;
+    background: linear-gradient(to right ,#264aa5,#4a73b8,#6593e0);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 /* Skills Section */
@@ -106,7 +116,6 @@ main {
 .skill-item img {
     width: 60px;
     height: 60px;
-    margin-bottom: 10px;
 }
 
 .skill-item h3 {
@@ -115,7 +124,7 @@ main {
 }
 
 .skill-item p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #d4d4d4;
 }
 
@@ -137,7 +146,7 @@ main {
     flex: 1 1 45%; /* Isso faz com que cada projeto ocupe até 45% da largura da tela */
     margin: 10px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -173,13 +182,13 @@ main {
     color: white;
     padding: 10px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: background-color 0.3s ease;
 }
 .project-pair {
     display: flex; /* Usar flexbox para alinhar os projetos lado a lado */
     justify-content: space-between; /* Distribuir espaço entre os projetos */
-    margin-bottom: 20px; /* Espaço entre as fileiras de projetos */
+    margin-bottom: 30px; /* Espaço entre as fileiras de projetos */
 }
 
 .project-item a:hover {
@@ -236,12 +245,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .whatsapp-img {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .whatsapp-btn {
@@ -286,10 +296,6 @@ main {
     height: 20px;
     margin: auto;
 }
-#send-buttons{
-    padding-bottom: 50px;
-}
-
 /* Form Section */
 form {
     display: flex;
@@ -299,7 +305,9 @@ form {
 
 form label {
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    padding: 10px 10px;
 }
 
 form input {
@@ -314,15 +322,20 @@ form input {
 form button {
     background-color: #4e9fd1;
     color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
     cursor: pointer;
+    padding: 9px 17px;
 }
 
 form button:hover {
     background-color: #3a7da2;
+}
+#foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsividade */
